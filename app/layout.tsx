@@ -19,19 +19,23 @@ export const metadata: Metadata = {
   description: "Professzionális hűtéstechnika és klímaszerelés",
 };
 
+import { FramerProvider } from "@/components/FramerProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu" className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth dark`}>
+    <html lang="hu" className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className="min-h-full flex flex-col">
-        {children}
+        <FramerProvider>
+          {children}
+        </FramerProvider>
       </body>
     </html>
   );
