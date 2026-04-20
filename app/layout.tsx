@@ -27,12 +27,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="hu" className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`}>
+    <html lang="hu" className={`${inter.variable} ${outfit.variable} h-full antialiased scroll-smooth`} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <FramerProvider>
           {children}
         </FramerProvider>

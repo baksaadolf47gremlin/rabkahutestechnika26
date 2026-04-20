@@ -6,12 +6,12 @@ import { Menu, X, Snowflake } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { label: "Kezdőlap", href: "#" },
-  { label: "Rólunk", href: "#rolunk" },
-  { label: "Szolgáltatásaink", href: "#szolgaltatasaink" },
-  { label: "Termékeink", href: "#termekeink" },
-  { label: "Galéria", href: "#galeria" },
-  { label: "Kapcsolat", href: "#kapcsolat" },
+  { label: "Kezdőlap", href: "/" },
+  { label: "Rólunk", href: "/rolunk" },
+  { label: "Szolgáltatásaink", href: "/szolgaltatasaink" },
+  { label: "Termékeink", href: "/termekeink" },
+  { label: "Galéria", href: "/galeria" },
+  { label: "Kapcsolat", href: "/kapcsolat" },
 ];
 
 export function Navbar() {

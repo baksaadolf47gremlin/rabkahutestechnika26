@@ -2,12 +2,12 @@ import Link from "next/link";
 import { Snowflake, Phone, Mail, MapPin, Globe, MessageSquare, Info } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "Kezdőlap", href: "#" },
-  { label: "Rólunk", href: "#rolunk" },
-  { label: "Szolgáltatások", href: "#szolgaltatasaink" },
-  { label: "Termékek", href: "#termekeink" },
-  { label: "Galéria", href: "#galeria" },
-  { label: "Kapcsolat", href: "#kapcsolat" },
+  { label: "Kezdőlap", href: "/" },
+  { label: "Rólunk", href: "/rolunk" },
+  { label: "Szolgáltatások", href: "/szolgaltatasaink" },
+  { label: "Termékek", href: "/termekeink" },
+  { label: "Galéria", href: "/galeria" },
+  { label: "Kapcsolat", href: "/kapcsolat" },
 ];
 
 export function Footer() {

@@ -24,7 +24,7 @@ export function Hero() {
     >
       {/* Cinematic Dark Parallax Background - Dark gradient reversed to left to shade the right side */}
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-brand-900/40 to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-l from-black/90 via-brand-900/50 to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-10" />
         <Image
           src="/images/AdobeStock_139582673-scaled.webp"
@@ -55,9 +55,9 @@ export function Hero() {
               </span>
             </div>
             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black font-heading leading-[1.05] tracking-tight text-white drop-shadow-lg">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black font-heading leading-[1.05] tracking-tight text-white drop-shadow-2xl">
               Épületgépészet <br />
-              <span className="text-brand-400">és Hűtéstechnika</span>
+              <span>és</span> <span className="text-brand-300 drop-shadow-[0_0_25px_rgba(147,197,253,0.4)]">Hűtéstechnika</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed drop-shadow-md">
