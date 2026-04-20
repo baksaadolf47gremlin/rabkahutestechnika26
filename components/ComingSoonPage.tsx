@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import {
   ArrowRight,
   Database,
@@ -38,12 +38,12 @@ interface ComingSoonPageProps {
   features: ComingSoonFeature[];
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.07, duration: 0.45, ease: "easeOut" },
+    transition: { delay: i * 0.07, duration: 0.45, ease: "easeOut" as const },
   }),
 };
 
